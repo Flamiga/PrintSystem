@@ -1,0 +1,13 @@
+.container{  background-image: linear-gradient(to bottom right, #E3E39C, #FFAAF9);;
+  color: white;
+  height: 1220px;
+}
+
+button{
+  width:50%;
+text-align: center;
+border-radius: 120px;
+background-color: darkblue;
+color:white;
+border:none;
+font-size: 5em;}
