@@ -118,44 +118,30 @@ ul{
   margin-bottom: 2%;
 }
 
-#drop-area {
-  border-radius: 20px;
-  width: 480px;
-  font-family: sans-serif;
-  margin: 100px auto;
-  padding: 20px;
-}
-#drop-area.highlight {
-  border-color: purple;
-}
-p {
-  margin-top: 0;
-}
-.my-form {
-  margin-bottom: 10px;
-}
-#gallery {
-  margin-top: 10px;
-}
-#gallery img {
-  width: 150px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-.button {
-  display: inline-block;
-  padding: 10px;
-  background: #ccc;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-.button:hover {
-  background: #ddd;
-}
 
 /**gemmer orginale browser knappen**/
-#fileElem {
-  display: none;
+
+#fileSelect{
+  width: 50%;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  font-size: 2em;
+  margin-left: 80%;
+  padding: 2px;
+}
+
+#fileList {
+  text-decoration-style: none;
+}
+
+#value{
+  font-size: 3em;
+  text-align: center;
+  background: lightgrey;
+  color: white;
+  width: 70%;
+  margin:10%;
 }
