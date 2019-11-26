@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+  <!--start siden-->
+    <section id="start" class="page">
   <div class="container">
 
     <div class="language">
@@ -17,27 +20,97 @@
 
         <div class="col-sm">
 
-   </div>
-   <div class="col-sm">
+        </div>
+        <div class="col-sm">
 
-   </div>
-   <div class="col-sm">
-     <div id="english">
-     <img src="img/united-kingdom.png" alt="United kingdom flag">
-     <p>ENG</p></div>
-     <div id="danish">
-     <img src="img/denmark.png" alt="Danish flag">
-     <p>DA</p></div>
-   </div>
+        </div>
+        <div class="col-sm">
+          <div id="english">
+            <img src="img/united-kingdom.png" alt="United kingdom flag">
+            <p>ENG</p>
+          </div>
+          <div id="danish">
+            <img src="img/denmark.png" alt="Danish flag">
+            <p>DA</p>
+          </div>
+        </div>
 
 
-    </div></div>
+      </div>
+    </div>
     <h1>SkjoldhøjPrint</h1>
-    <section><button>Start</button></section>
+    <a href="#print" onclick="showPage('print')"><button>Start</button></a>
   </div>
+</section>
+  <!--print siden-->
+
+  <section id="print" class="page">
+    <div class="container">
+
+      <div class="language">
+        <div class="row">
+
+          <div class="col-sm">
+            <h2>SkjoldhøjPrint</h2>
+          </div>
+          <div class="col-sm">
+
+          </div>
+          <div class="col-sm">
+            <div id="english">
+              <img src="img/united-kingdom.png" alt="United kingdom flag">
+              <p>ENG</p>
+            </div>
+            <div id="danish">
+              <img src="img/denmark.png" alt="Danish flag">
+              <p>DA</p>
+            </div>
+          </div>
+
+          <div class="container">
+
+            <h1 id="headline">VÆLG DIN FIL</h1>
+            <input type="file" id="browse" name="fileupload" style="display: none" onChange="Handlechange();" />
+            <input type="text" id="filename" readonly="true" />
+            <input type="button" value="Browse" id="fakeBrowse" onclick="HandleBrowseClick();" />
+            <div class="row" class="info">
+              <div class="col-sm" id="layout">
+
+                <h3>
+                  Layout
+                </h3>
+              <img id="question" src="img/question-sign.png" alt="Question-mark">
+                <br>
+                <p>Du har endnu ikke valgt en fil</p>
+
+              </div>
+              <div class="col-sm" id="info">
+                <p>E-mail:</p><br> <input id="email" type="email" name="emailaddress">
+                <br>
+                <p>Sider:</p><br>
+                <p>Pris:</p><br>
+                <p>Afhent det hos LokalBrugsen<br>
+                  Medbring venligst:</p>
+                <ul>
+                  <li>Kredit kort</li>
+                  <li>Kontanter</li>
+                  <li>MobilePay</li>
+                </ul>
+                <a href="#code" onclick="showPage('code')"><button id="print-button">Print</button></a>
+              </div>
+            </div>
+          </div>
+
+  </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4fe53f0b80.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="main.js">
+
+  </script>
+  </script>
 </body>
 
 </html>
