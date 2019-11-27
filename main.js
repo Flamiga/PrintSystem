@@ -1,3 +1,5 @@
+"use strict";
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyCs7dbh84XzGMud3OdFmW_CrjyTrpkc_Zo",
@@ -11,7 +13,33 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-"use strict";
+const ref = firebase.storage().ref();
+
+function uploadFile(){
+const file = document.querySelector('#fileElem').files[0]
+console.log(file);
+const name = (+new Date()) + '-' + file.name; // dato kan undlades men hvis man har flere filer med sammen navn overskriver den tidligere.
+const metadata = {
+  contentType: file.type
+};
+const task = ref.child(name).put(file, metadata); //ref er min refernce til min firebase reference
+task
+  .then(snapshot => snapshot.ref.getDownloadURL()) // linker til stor billedet
+  //.then((url) => {
+  //  console.log(url);
+  //  document.querySelector('#someImageTagID').src = url;
+//  })
+  .catch(console.error);
+};
+
+
+// reset knappen
+function reset(){
+    document.getElementById('fileList').src = url;
+
+
+}
+
 
 // ---------- default SPA Web App setup ---------- //
 
@@ -40,6 +68,8 @@ function setDefaultPage() {
 
 setDefaultPage();
 
+
+// browser filen
 const selectedFile = document.getElementById('fileElem').files[0];
 
 window.URL = window.URL || window.webkitURL;
@@ -56,6 +86,7 @@ fileSelect.addEventListener("click", function(e) {
   e.preventDefault(); // prevent navigation to "#"
 }, false);
 
+// viser billedet
 function handleFiles(files) {
   if (!files.length) {
     fileList.innerHTML = "<p>Du har endnu ikke valgt en fil</p>";
