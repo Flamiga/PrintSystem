@@ -35,8 +35,7 @@ task
 
 // reset knappen
 function reset(){
-    document.getElementById('fileList').src = url;
-
+  document.getElementById('fileElem').removeAttribute('src');
 
 }
 
