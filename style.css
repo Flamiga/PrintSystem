@@ -2,7 +2,13 @@
   background-image: url(img/background.png);
   background-size: cover;
   color: white;
-  height: 1220px;
+  height: 560px;
+}
+
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  height: auto;
 }
 
 .language img {
@@ -11,7 +17,7 @@
 }
 
 .language p {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 #danish {
@@ -29,11 +35,15 @@
 }
 
 h1 {
-  font-size: 5em;
-  padding-top: 250px;
+  font-size: 4em;
+  padding-top: 80px;
   padding-bottom: 100px;
   text-decoration-line: underline;
   text-align: center;
+}
+
+#headline h1 {
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -47,22 +57,22 @@ button {
   background-color: darkblue;
   color: white;
   border: none;
-  font-size: 5em;
+  font-size: 3em;
   margin-left: 25%;
   margin-right: 25%;
   text-transform: uppercase;
-  ;
 }
 
 #email {
   border-radius: 10px;
   border: none;
   width: 100%;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 #headline {
-  padding-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 #filename {
@@ -79,7 +89,7 @@ button {
   border-bottom-right-radius: 10px;
   color: white;
   border: none;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .info {
@@ -90,45 +100,59 @@ button {
   background-color: hsla(0, 0%, 50%, 0.3);
   border-radius: 10px;
   margin: 2%;
-  text-align:center;
+  text-align: center;
 }
 
-#layout p{
+#layout p {
   padding-top: 15%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: -1rem;
+}
+
+#last-message {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#done {
+  margin-top: 10%;
+  font-size: 2em;
 }
 
 #info {
   background-color: hsla(0, 0%, 50%, 0.3);
   border-radius: 10px;
-  margin:2%;
+  margin: 2%;
 }
 
-#question{
+#question {
   width: 60%;
 }
 
-ul{
-  font-size: 2em;
+ul {
+  margin-top: 2%;
+  font-size: 1 em;
 }
 
-#print-button{
-  font-size: 3em;
+#print-button {
+  font-size: 2em;
   background-color: lightgrey;
   text-transform: none;
   margin-bottom: 2%;
 }
 
-
 /**gemmer orginale browser knappen**/
-
-#fileSelect{
+#fileSelect {
   width: 50%;
   border-top-right-radius: 120px;
   border-bottom-right-radius: 120px;
   background-color: darkblue;
   color: white;
   border: none;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-left: 80%;
   padding: 2px;
 }
@@ -137,11 +161,13 @@ ul{
   text-decoration-style: none;
 }
 
-#value{
+#value {
   font-size: 3em;
   text-align: center;
   background: lightgrey;
   color: white;
   width: 70%;
-  margin:10%;
+  margin: 15%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
